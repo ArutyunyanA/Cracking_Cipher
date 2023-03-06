@@ -18,9 +18,9 @@ def cesar_cipher(msg, key, mode, SYMBOLS):
                         elif translate < 0:
                                 translate = translate + len(SYMBOLS)
 
-                        translated = translated + SYMBOLS[translate]
+                        translated += SYMBOLS[translate]
                 else:
-                        translated = translated + x
+                        translated += x
 
         return translated
         pyperclip.copy(translated)

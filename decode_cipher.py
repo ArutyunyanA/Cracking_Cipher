@@ -12,7 +12,7 @@ def decode_cipher(SYMBOLS, encryption):
 
                                 if decryptInd < 0:
                                         decryptInd = decryptInd + len(SYMBOLS)
-                                decrypt = decrypt + SYMBOLS[decryptInd]
+                                decrypt += SYMBOLS[decryptInd]
                         else:
                                 decrypt += i
                                 

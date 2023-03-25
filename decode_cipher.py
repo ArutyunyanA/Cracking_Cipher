@@ -11,7 +11,7 @@ def decode_cipher(SYMBOLS, encryption):
                                 decryptInd = symbolInd - key
 
                                 if decryptInd < 0:
-                                        decryptInd = decryptInd + len(SYMBOLS)
+                                        decryptInd += len(SYMBOLS)
                                 decrypt += SYMBOLS[decryptInd]
                         else:
                                 decrypt += i

@@ -14,9 +14,9 @@ def cesar_cipher(msg, key, mode, SYMBOLS):
                                 translate = symbol - key
                 
                         if translate >= len(SYMBOLS):
-                                translate = translate - len(SYMBOLS)
+                                translate -= len(SYMBOLS)
                         elif translate < 0:
-                                translate = translate + len(SYMBOLS)
+                                translate += len(SYMBOLS)
 
                         translated += SYMBOLS[translate]
                 else:

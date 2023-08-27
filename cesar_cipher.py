@@ -1,4 +1,3 @@
-import pyperclip
 
 
 def cesar_cipher(msg, key, mode, SYMBOLS):
@@ -23,6 +22,5 @@ def cesar_cipher(msg, key, mode, SYMBOLS):
                         translated += x
 
         return translated
-        pyperclip.copy(translated)
 
 print(cesar_cipher(input('<<::Please type the key-word::>>\n'), 13, 'encrypt', 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'))
